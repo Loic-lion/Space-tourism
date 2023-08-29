@@ -2,7 +2,7 @@ import NavBarDestination from "./navbar-destination";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Planet from "./planet-info";
 
-export default function Destination() {
+export default function Destination({ destination }) {
   return (
     <>
       <h2>01 Pick your destination</h2>

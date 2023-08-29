@@ -6,9 +6,22 @@ import Home from "./assets/components/pages/home";
 import Destination from "./assets/components/pages/destination";
 import Crew from "./assets/components/pages/crew";
 import Technology from "./assets/components/pages/technology";
+import { useEffect, useState } from "react";
 
 export default function App() {
-  
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((response) => response.json())
+      .then((jsonData) => {
+        setData(jsonData);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
   return (
     <>
       <Router>
@@ -16,9 +29,15 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Destination/*" element={<Destination />} />
-            <Route path="/Crew/*" element={<Crew />} />
-            <Route path="/Technology/*" element={<Technology />} />
+            <Route
+              path="/Destination/*"
+              element={<Destination destination={data.destinations} />}
+            />
+            <Route path="/Crew/*" element={<Crew crew={data.crew} />} />
+            <Route
+              path="/Technology/*"
+              element={<Technology technology={data.technology} />}
+            />
           </Routes>
         </main>
       </Router>
