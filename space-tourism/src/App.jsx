@@ -8,6 +8,7 @@ import Crew from "./assets/components/pages/crew";
 import Technology from "./assets/components/pages/technology";
 
 export default function App() {
+  
   return (
     <>
       <Router>
@@ -15,9 +16,9 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Destination" element={<Destination />} />
-            <Route path="/Crew" element={<Crew />} />
-            <Route path="/Technology" element={<Technology />} />
+            <Route path="/Destination/*" element={<Destination />} />
+            <Route path="/Crew/*" element={<Crew />} />
+            <Route path="/Technology/*" element={<Technology />} />
           </Routes>
         </main>
       </Router>
