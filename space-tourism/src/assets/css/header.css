@@ -132,9 +132,12 @@ table {
 header {
   display: flex;
   position: relative;
+  justify-content: space-between;
+  margin-bottom: 48px;
 }
 header .logo {
   height: 40px;
+  margin: 24px 0px 0px 24px;
 }
 header .container__hr {
   display: none;
@@ -145,6 +148,7 @@ header .container__hr hr {
 header .menu__burger {
   height: 21px;
   width: 24px;
+  margin: 33px 24px 0px 0px;
 }
 header .navbar__mobile {
   position: absolute;
@@ -155,9 +159,11 @@ header .navbar__mobile {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-color: #ffffff 4%;
+  display: none;
 }
 header .navbar__mobile.open {
   right: 0px;
+  display: block;
 }
 header .navbar__desktop {
   display: none;

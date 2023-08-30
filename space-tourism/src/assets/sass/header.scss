@@ -4,8 +4,11 @@
 header {
   display: flex;
   position: relative;
+  justify-content: space-between;
+  margin-bottom: 48px;
   .logo {
     height: 40px;
+    margin: 24px 0px 0px 24px;
   }
   .container__hr {
     display: none;
@@ -16,6 +19,7 @@ header {
   .menu__burger {
     height: 21px;
     width: 24px;
+    margin: 33px 24px 0px 0px;
   }
   .navbar {
     &__mobile {
@@ -26,8 +30,10 @@ header {
       width: 254px;
       backdrop-filter: blur(10px);
       background-color: #ffffff 4%;
+      display: none;
       &.open {
         right: 0px;
+        display: block;
       }
     }
 
