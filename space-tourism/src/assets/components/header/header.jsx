@@ -9,8 +9,9 @@ export default function Header() {
     <header>
       <img src={Logo} alt="Logo de l'entreprise Space Tourism" />
       <hr />
-      <img src={Burger} alt="icone pour le menu burger" />
+
       <nav className="navbar__mobile">
+        <img src={Burger} alt="icone pour le menu burger" />
         <img src={Close} alt="icone de fermeture pour le menu burger" />
         <ul>
           <li>
