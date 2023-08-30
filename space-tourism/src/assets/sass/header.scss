@@ -1,0 +1,43 @@
+@import "_reset.scss";
+@import "_variables-&-mixin.scss";
+
+header {
+  display: flex;
+  position: relative;
+  .logo {
+    height: 40px;
+  }
+  .container__hr {
+    display: none;
+    hr {
+      width: 473px;
+    }
+  }
+  .menu__burger {
+    height: 21px;
+    width: 24px;
+  }
+  .navbar {
+    &__mobile {
+      position: absolute;
+      top: 0px;
+      right: -300px;
+      height: 100vh;
+      width: 254px;
+      backdrop-filter: blur(10px);
+      background-color: #ffffff 4%;
+      &.open {
+        right: 0px;
+      }
+    }
+
+    &__desktop {
+      display: none;
+      @include responsive-desktop {
+        display: flex;
+      }
+      @include responsive-tablet {
+      }
+    }
+  }
+}
