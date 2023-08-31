@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 
+$font1: "Bellefair", serif;
+$font2: "Barlow Condensed", sans-serif;
+$font3: "Barlow", sans-serif;
 
 @mixin responsive-desktop {
   @media screen and (min-width: 1440px) {

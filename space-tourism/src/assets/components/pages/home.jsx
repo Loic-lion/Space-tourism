@@ -14,7 +14,10 @@ export default function Home() {
         </p>
       </section>
       <section className="container__explore">
-        <div>EXPLORE</div>
+        <div className="container__explore__circle">
+          EXPLORE
+          <div className="container__explore__circle__button"></div>
+        </div>
       </section>
     </>
   );

@@ -23,17 +23,41 @@ header {
   }
   .navbar {
     &__mobile {
+      z-index: 2;
       position: absolute;
       top: 0px;
       right: -300px;
       height: 100vh;
       width: 254px;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(40px);
       background-color: #ffffff 4%;
       display: none;
       &.open {
         right: 0px;
-        display: block;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__close {
+        height: 19px;
+        width: 19px;
+        align-self: flex-end;
+        margin: 34px 26px 65px 0px;
+      }
+      ul {
+        li {
+          margin: 0px 0px 32px 32px;
+          a {
+            letter-spacing: 2.7px;
+            text-decoration: none;
+            color: white;
+            font-family: $font2;
+            font-size: 16px;
+            span {
+              font-weight: 800;
+            }
+          }
+        }
       }
     }
 

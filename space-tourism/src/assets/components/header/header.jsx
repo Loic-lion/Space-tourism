@@ -31,6 +31,7 @@ export default function Header() {
       />
       <nav className={`navbar__mobile ${menuBurgerOpen ? "open" : ""}`}>
         <img
+          className="navbar__mobile__close"
           src={Close}
           onClick={handleMenuClick}
           alt="icone de fermeture pour le menu burger"
@@ -38,22 +39,22 @@ export default function Header() {
         <ul>
           <li>
             <Link to="/">
-              <span>00</span> Home
+              <span>00 </span> HOME
             </Link>
           </li>
           <li>
             <Link to="/destination/*">
-              <span>01</span> Destination
+              <span>01 </span> DESTINATION
             </Link>
           </li>
           <li>
             <Link to="/crew/*">
-              <span>02 </span>Crew
+              <span>02 </span> CREW
             </Link>
           </li>
           <li>
             <Link to="/technology/*">
-              <span>03</span>Technology
+              <span>03 </span> TECHNOLOGY
             </Link>
           </li>
         </ul>
