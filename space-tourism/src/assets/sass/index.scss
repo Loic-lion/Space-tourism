@@ -28,6 +28,16 @@ body {
       background-image: url("../img/destination/background-destination-tablet.jpg");
     }
   }
+  &.crew {
+    background-image: url("../img/crew/background-crew-mobile.jpg");
+
+    @include responsive-desktop {
+      background-image: url("../img/crew/background-crew-desktop.jpg");
+    }
+    @include responsive-tablet {
+      background-image: url("../img/crew/background-crew-tablet.jpg");
+    }
+  }
 
   main {
     display: flex;

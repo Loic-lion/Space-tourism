@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 .container__home {
   text-align: center;
+  margin-top: 24px;
 }
 .container__home h5 {
   font-size: 16px;

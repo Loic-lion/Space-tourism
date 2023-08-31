@@ -1,9 +1,9 @@
 export default function CrewInfo({ crewInfo }) {
   return (
-    <article>
-      <span>{crewInfo.role}</span>
+    <article className="container__crew__info__member">
+      <div className="container__crew__info__member__role">{crewInfo.role}</div>
       <h3>{crewInfo.name}</h3>
-      <span>{crewInfo.bio}</span>
+      <div className="container__crew__info__member__bio">{crewInfo.bio}</div>
     </article>
   );
 }

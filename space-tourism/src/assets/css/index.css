@@ -35,6 +35,19 @@ body.destination {
     background-image: url("../img/destination/background-destination-tablet.jpg");
   }
 }
+body.crew {
+  background-image: url("../img/crew/background-crew-mobile.jpg");
+}
+@media screen and (min-width: 1440px) {
+  body.crew {
+    background-image: url("../img/crew/background-crew-desktop.jpg");
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  body.crew {
+    background-image: url("../img/crew/background-crew-tablet.jpg");
+  }
+}
 body main {
   display: flex;
   flex-direction: column;
