@@ -1,38 +1,26 @@
-import moonWebp from "../../../img/destination/image-moon.webp";
-import marsWebp from "../../../img/destination/image-mars.webp";
-import titanWebp from "../../../img/destination/image-titan.webp";
-import europaWebp from "../../../img/destination/image-europa.webp";
-
 export default function Planet({ info }) {
-  let imagePath;
-  if (info.name === "Moon") {
-    imagePath = moonWebp;
-  } else if (info.name === "Mars") {
-    imagePath = marsWebp;
-  } else if (info.name === "Titan") {
-    imagePath = titanWebp;
-  } else if (info.name === "Europa") {
-    imagePath = europaWebp;
-  }
   return (
     <>
-      <section>
-        <article>
-          <img src={imagePath} alt={`image of ${info.name}`} />
-        </article>
-        <article>
-          <h3>{info.name}</h3>
-          <span>{info.description}</span>
-          <hr />
-          <div>
-            <div>
-              <span> Avg. distance {info.distance}</span>
+      <section className="container__info__planet">
+        <h3>{info.name}</h3>
+        <div className="container__info__planet__description">
+          {info.description}
+        </div>
+        <hr />
+        <div className="container__info__planet__stat">
+          <div className="container__info__planet__stat__box">
+            <div className="container__info__planet__stat__box__title">
+              Avg. distance
             </div>
-            <div>
-              <span> Est. travel time {info.travel}</span>
-            </div>
+            <div className="container__info__planet__stat__box__km">{info.distance}</div>
           </div>
-        </article>
+          <div>
+            <div className="container__info__planet__stat__box__title">
+              Est. travel time
+            </div>
+            <div className="container__info__planet__stat__box__day">{info.travel}</div>
+          </div>
+        </div>
       </section>
     </>
   );

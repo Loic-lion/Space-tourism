@@ -1,0 +1,86 @@
+@import "_variables-&-mixin.scss";
+.container__destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h5 {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-family: $font2;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    span {
+      color: rgba(255, 255, 255, 0.247);
+    }
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      height: 170px;
+      width: 170px;
+      margin-bottom: 26px;
+    }
+    &__bar {
+      ul {
+        display: flex;
+        margin-bottom: 20px;
+        li {
+          margin-right: 27px;
+          &:last-child {
+            margin-right: 0px;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+            font-family: $font2;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+.container__info__planet {
+  text-align: center;
+  h3 {
+    font-family: $font1;
+    font-size: 56px;
+    text-transform: uppercase;
+  }
+  &__description {
+    font-size: 15px;
+    font-family: $font3;
+    line-height: 25px;
+    margin-bottom: 32px;
+    width: 327px;
+  }
+  hr {
+    border: 1px solid rgba(255, 255, 255, 0.171);
+    margin-bottom: 32px;
+  }
+  &__stat {
+    &__box {
+      &__title {
+        font-size: 14px;
+        font-family: $font2;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 12px;
+      }
+      &__km {
+        margin-bottom: 32px;
+        font-family: $font1;
+        font-size: 28px;
+        text-transform: uppercase;
+      }
+      &__day {
+        margin-bottom: 58px;
+        font-family: $font1;
+        font-size: 28px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

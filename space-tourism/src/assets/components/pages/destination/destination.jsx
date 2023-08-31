@@ -1,14 +1,38 @@
 import NavBarDestination from "./navbar-destination";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Planet from "./planet-info";
+import "../../../css/destination.css";
+import DestinationImg from "./destination-img";
 
 export default function Destination({ destinations }) {
+  function addBodyClass() {
+    document.body.classList.add("destination");
+
+    return () => {
+      document.body.classList.remove("destination");
+    };
+  }
+  addBodyClass();
+
   return (
     <>
-      <section>
-        <h2>01 Pick your destination</h2>
-
-        <NavBarDestination planet={destinations}/>
+      <section className="container__destination">
+        <h5>
+          <span>01</span> Pick your destination
+        </h5>
+        <div className="container__destination__navigation">
+          <Routes>
+            <Route path="/*" element={<Navigate to="moon" />} />
+            {destinations.map((destinationsImage, index) => (
+              <Route
+                key={index}
+                path={destinationsImage.name}
+                element={<DestinationImg info={destinationsImage} />}
+              />
+            ))}
+          </Routes>
+          <NavBarDestination planet={destinations} />
+        </div>
       </section>
       <Routes>
         <Route path="/*" element={<Navigate to="moon" />} />
@@ -20,7 +44,6 @@ export default function Destination({ destinations }) {
           />
         ))}
       </Routes>
-      
     </>
   );
 }

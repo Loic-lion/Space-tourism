@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+.container__destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__destination h5 {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.container__destination h5 span {
+  color: rgba(255, 255, 255, 0.247);
+}
+.container__destination__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__destination__navigation img {
+  height: 170px;
+  width: 170px;
+  margin-bottom: 26px;
+}
+.container__destination__navigation__bar ul {
+  display: flex;
+  margin-bottom: 20px;
+}
+.container__destination__navigation__bar ul li {
+  margin-right: 27px;
+}
+.container__destination__navigation__bar ul li:last-child {
+  margin-right: 0px;
+}
+.container__destination__navigation__bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+.container__info__planet {
+  text-align: center;
+}
+.container__info__planet h3 {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+.container__info__planet__description {
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  margin-bottom: 32px;
+  width: 327px;
+}
+.container__info__planet hr {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  margin-bottom: 32px;
+}
+.container__info__planet__stat__box__title {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.container__info__planet__stat__box__km {
+  margin-bottom: 32px;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.container__info__planet__stat__box__day {
+  margin-bottom: 58px;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=destination.css.map */

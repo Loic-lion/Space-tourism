@@ -1,6 +1,14 @@
 import "../../css/home.css";
 
 export default function Home() {
+  function addBodyClass() {
+    document.body.classList.add("home");
+
+    return () => {
+      document.body.classList.remove("home");
+    };
+  }
+  addBodyClass();
   return (
     <>
       <section className="container__home">
