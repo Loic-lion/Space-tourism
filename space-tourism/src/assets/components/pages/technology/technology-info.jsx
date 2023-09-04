@@ -1,10 +1,10 @@
 export default function TechnologyInfo({ technology }) {
   return (
     <>
-      <article>
-        <span>The terminology...</span>
+      <article className="container__technology__info__navigation__data">
+        <div className="container__technology__info__navigation__data__subtitle">The terminology...</div>
         <h3>{technology.name}</h3>
-        <span>{technology.description}</span>
+        <div className="container__technology__info__navigation__data__description">{technology.description}</div>
       </article>
     </>
   );

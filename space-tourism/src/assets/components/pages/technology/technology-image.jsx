@@ -19,8 +19,8 @@ export default function TechnologyImg({ techImage }) {
   }
   return (
     <>
-      <img src={imagePath} alt={`image of ${techImage.name}`} />
-      <img src={imagePathDesktop} alt={`image of ${techImage.name}`} />
+      <img className="container__technology__info__mobile" src={imagePath} alt={`image of ${techImage.name}`} />
+      <img className="container__technology__info__desktop" src={imagePathDesktop} alt={`image of ${techImage.name}`} />
     </>
   );
 }

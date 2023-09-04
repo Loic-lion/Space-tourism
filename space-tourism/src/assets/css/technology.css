@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+.container__technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__technology h5 {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.container__technology h5 span {
+  color: rgba(255, 255, 255, 0.247);
+}
+.container__technology__info__mobile {
+  width: 100%;
+  margin-bottom: 34px;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__mobile {
+    display: none;
+  }
+}
+.container__technology__info__desktop {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__desktop {
+    display: block;
+  }
+}
+.container__technology__info__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__technology__info__navigation__navbar {
+  margin-bottom: 26px;
+}
+.container__technology__info__navigation__navbar ul {
+  display: flex;
+}
+.container__technology__info__navigation__navbar ul li {
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+.container__technology__info__navigation__navbar ul li:hover {
+  background-color: white;
+}
+.container__technology__info__navigation__navbar ul li:hover a {
+  color: black;
+}
+.container__technology__info__navigation__navbar ul li:last-child {
+  margin-right: 0px;
+}
+.container__technology__info__navigation__navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container__technology__info__navigation__data {
+  text-align: center;
+}
+.container__technology__info__navigation__data__subtitle {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 9px;
+}
+.container__technology__info__navigation__data h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.container__technology__info__navigation__data__description {
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  width: 327px;
+  margin-bottom: 104px;
+}/*# sourceMappingURL=technology.css.map */
