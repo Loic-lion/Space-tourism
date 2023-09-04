@@ -20,9 +20,7 @@ export default function Header() {
         src={Logo}
         alt="Logo de l'entreprise Space Tourism"
       />
-      <div className="container__hr">
-        <hr />
-      </div>
+
       <img
         className="menu__burger"
         onClick={handleMenuClick}
@@ -59,31 +57,34 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <div className="navbar__desktop">
+        <hr />
 
-      <nav className="navbar__desktop">
-        <ul>
-          <li>
-            <Link to="/">
-              <span>00</span> Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/destination/*">
-              <span>01</span> Destination
-            </Link>
-          </li>
-          <li>
-            <Link to="/crew/*">
-              <span>02 </span>Crew
-            </Link>
-          </li>
-          <li>
-            <Link to="/technology/*">
-              <span>03</span>Technology
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        <nav className="navbar__desktop__menu">
+          <ul>
+            <li>
+              <Link to="/">
+                <span>00</span> Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/destination/*">
+                <span>01</span> Destination
+              </Link>
+            </li>
+            <li>
+              <Link to="/crew/*">
+                <span>02 </span>Crew
+              </Link>
+            </li>
+            <li>
+              <Link to="/technology/*">
+                <span>03</span>Technology
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }

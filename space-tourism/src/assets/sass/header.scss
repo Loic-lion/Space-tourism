@@ -9,17 +9,19 @@ header {
   .logo {
     height: 40px;
     margin: 24px 0px 0px 24px;
-  }
-  .container__hr {
-    display: none;
-    hr {
-      width: 473px;
+    @include responsive-desktop {
+      height: 48px;
+      margin: 64px 0px 0px 55px;
     }
   }
+
   .menu__burger {
     height: 21px;
     width: 24px;
     margin: 33px 24px 0px 0px;
+    @include responsive-desktop {
+      display: none;
+    }
   }
   .navbar {
     &__mobile {
@@ -32,6 +34,7 @@ header {
       backdrop-filter: blur(40px);
       background-color: #ffffff 4%;
       display: none;
+
       &.open {
         right: 0px;
         display: flex;
@@ -60,13 +63,53 @@ header {
         }
       }
     }
-
     &__desktop {
+      position: relative;
       display: none;
       @include responsive-desktop {
-        display: flex;
+        display: block;
       }
-      @include responsive-tablet {
+      hr {
+        position: absolute;
+        width: 473px;
+        top: 82px;
+        right: 800px;
+        z-index: 2;
+      }
+
+      &__menu {
+        display: none;
+        z-index: 1;
+        @include responsive-desktop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 830px;
+          height: 96px;
+          background-color: rgba(255, 255, 255, 0.04);
+          backdrop-filter: blur(40px);
+          margin-top: 40px;
+
+          ul {
+            display: flex;
+            li {
+              margin-right: 40px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-family: $font2;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                span {
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+        @include responsive-tablet {
+        }
       }
     }
   }
