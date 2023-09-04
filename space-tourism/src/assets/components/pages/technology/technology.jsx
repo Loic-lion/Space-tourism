@@ -4,6 +4,13 @@ import TechnologyImg from "./technology-image";
 import { Route, Routes, Navigate } from "react-router-dom";
 
 export default function Technology({ technology }) {
+  function addBodyClass() {
+    document.body.classList.add("technology");
+    document.body.classList.remove("crew");
+    document.body.classList.remove("home");
+    document.body.classList.remove("destination");
+  }
+  addBodyClass();
   return (
     <>
       <section>

@@ -9,17 +9,25 @@ import Technology from "./assets/components/pages/technology/technology";
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [data, setData] = useState([]);
-
+  const [data, setData] = useState({
+    destinations: [],
+    crew: [],
+    technology: [],
+  });
   useEffect(() => {
+    let isSubscribe = true;
+
     fetch("/data.json")
       .then((response) => response.json())
       .then((jsonData) => {
-        setData(jsonData);
+        if (isSubscribe) setData(jsonData);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
+    return () => {
+      isSubscribe = false;
+    };
   }, []);
 
   return (

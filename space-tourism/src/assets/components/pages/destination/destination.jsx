@@ -7,10 +7,11 @@ import DestinationImg from "./destination-img";
 export default function Destination({ destinations }) {
   function addBodyClass() {
     document.body.classList.add("destination");
+    document.body.classList.remove("technology");
+    document.body.classList.remove("crew");
+    document.body.classList.remove("home");
 
-    return () => {
-      document.body.classList.remove("destination");
-    };
+
   }
   addBodyClass();
 

@@ -3,10 +3,9 @@ import "../../css/home.css";
 export default function Home() {
   function addBodyClass() {
     document.body.classList.add("home");
-
-    return () => {
-      document.body.classList.remove("home");
-    };
+    document.body.classList.remove("technology");
+    document.body.classList.remove("crew");
+    document.body.classList.remove("destination");
   }
   addBodyClass();
   return (

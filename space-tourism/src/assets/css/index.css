@@ -48,6 +48,19 @@ body.crew {
     background-image: url("../img/crew/background-crew-tablet.jpg");
   }
 }
+body.technology {
+  background-image: url("../img/technology/background-technology-mobile.jpg");
+}
+@media screen and (min-width: 1440px) {
+  body.technology {
+    background-image: url("../img/technology/background-technology-desktop.jpg");
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  body.technology {
+    background-image: url("../img/technology/background-technology-tablet.jpg");
+  }
+}
 body main {
   display: flex;
   flex-direction: column;

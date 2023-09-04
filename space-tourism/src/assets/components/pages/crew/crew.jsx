@@ -7,10 +7,11 @@ import { Route, Routes, Navigate } from "react-router-dom";
 export default function Crew({ crew }) {
   function addBodyClass() {
     document.body.classList.add("crew");
+    document.body.classList.remove("technology");
+    document.body.classList.remove("home");
+    document.body.classList.remove("destination");
 
-    return () => {
-      document.body.classList.remove("crew");
-    };
+
   }
   addBodyClass();
   return (
