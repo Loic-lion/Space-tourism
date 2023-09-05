@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function NavBarDestination({ planet }) {
-  const [activeLink, setActiveLink] = useState(0); // Initialisation avec l'index du premier lien
+  const [activeLink, setActiveLink] = useState(0); 
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
@@ -18,7 +18,7 @@ export default function NavBarDestination({ planet }) {
                 to={destination.name}
                 onClick={() => handleLinkClick(index)}
                 style={{
-                  color: activeLink === index ? "rgba(255, 255, 255)" : "rgba(255, 255, 255, 0.5)", // Change the color as needed
+                  color: activeLink === index ? "rgba(255, 255, 255)" : "rgba(255, 255, 255, 0.5)",
                 }}
               >
                 {destination.name}

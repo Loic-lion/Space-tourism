@@ -104,9 +104,17 @@ header {
                 font-family: $font2;
                 text-transform: uppercase;
                 letter-spacing: 3px;
+                &:hover {
+                  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+                  padding-bottom: 35px;
+                }
                 span {
                   font-weight: bold;
                 }
+              }
+              .active {
+                border-bottom: 3px solid rgb(255, 255, 255);
+                padding-bottom: 35px;
               }
             }
           }

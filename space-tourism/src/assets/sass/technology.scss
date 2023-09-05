@@ -70,7 +70,7 @@
           li {
             height: 40px;
             width: 40px;
-            border: 1px solid white;
+            border: 1px solid rgba(255, 255, 255, 0.253);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -83,10 +83,7 @@
               font-size: 32px;
             }
             &:hover {
-              background-color: white;
-              a {
-                color: black;
-              }
+              border: 1px solid rgba(255, 255, 255, 1);
             }
             &:last-child {
               margin-right: 0px;

@@ -90,7 +90,7 @@
 .container__technology__info__navigation__navbar ul li {
   height: 40px;
   width: 40px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.253);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -106,10 +106,7 @@
   }
 }
 .container__technology__info__navigation__navbar ul li:hover {
-  background-color: white;
-}
-.container__technology__info__navigation__navbar ul li:hover a {
-  color: black;
+  border: 1px solid rgb(255, 255, 255);
 }
 .container__technology__info__navigation__navbar ul li:last-child {
   margin-right: 0px;

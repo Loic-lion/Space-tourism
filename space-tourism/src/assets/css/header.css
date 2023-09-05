@@ -245,7 +245,15 @@ header .navbar__desktop__menu {
     text-transform: uppercase;
     letter-spacing: 3px;
   }
+  header .navbar__desktop__menu ul li a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 35px;
+  }
   header .navbar__desktop__menu ul li a span {
     font-weight: bold;
+  }
+  header .navbar__desktop__menu ul li .active {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 35px;
   }
 }/*# sourceMappingURL=header.css.map */
