@@ -1,5 +1,6 @@
 @import "_variables-&-mixin.scss";
 .container {
+  animation: fade-in 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;

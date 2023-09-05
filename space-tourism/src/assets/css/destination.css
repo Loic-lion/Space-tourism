@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 .cont {
+  animation: fade-in 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +84,10 @@
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+.cont__destination__navigation__bar ul li a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 12px;
+}
 .cont__info__planet {
   text-align: center;
 }
@@ -153,4 +158,13 @@
   font-family: "Bellefair", serif;
   font-size: 28px;
   text-transform: uppercase;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
 }/*# sourceMappingURL=destination.css.map */

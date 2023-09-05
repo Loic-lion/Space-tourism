@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
 .container {
+  animation: fade-in 0.5s;
   display: flex;
   flex-direction: column;
   align-items: center;

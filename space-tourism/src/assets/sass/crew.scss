@@ -1,6 +1,7 @@
 @import "_variables-&-mixin.scss";
 
 .container__crew {
+  animation: fade-in 0.5s;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
