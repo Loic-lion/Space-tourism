@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+  header {
+    margin-bottom: 76px;
+  }
+}
+header .logo {
+  height: 40px;
+  margin: 24px 0px 0px 24px;
+}
+@media screen and (min-width: 1440px) {
+  header .logo {
+    height: 48px;
+    margin: 64px 0px 0px 55px;
+  }
+}
+header .menu__burger {
+  height: 21px;
+  width: 24px;
+  margin: 33px 24px 0px 0px;
+}
+@media screen and (min-width: 1440px) {
+  header .menu__burger {
+    display: none;
+  }
+}
+header .navbar__mobile {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  right: -300px;
+  height: 100vh;
+  width: 254px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  background-color: #ffffff 4%;
+  display: none;
+}
+header .navbar__mobile.open {
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+header .navbar__mobile__close {
+  height: 19px;
+  width: 19px;
+  align-self: flex-end;
+  margin: 34px 26px 65px 0px;
+}
+header .navbar__mobile ul li {
+  margin: 0px 0px 32px 32px;
+}
+header .navbar__mobile ul li a {
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+}
+header .navbar__mobile ul li a span {
+  font-weight: 800;
+}
+header .navbar__desktop {
+  position: relative;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  header .navbar__desktop {
+    display: block;
+  }
+}
+header .navbar__desktop hr {
+  position: absolute;
+  width: 473px;
+  top: 82px;
+  right: 800px;
+  z-index: 2;
+}
+header .navbar__desktop__menu {
+  display: none;
+  z-index: 1;
+}
+@media screen and (min-width: 1440px) {
+  header .navbar__desktop__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 830px;
+    height: 96px;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    margin-top: 40px;
+  }
+  header .navbar__desktop__menu ul {
+    display: flex;
+  }
+  header .navbar__desktop__menu ul li {
+    margin-right: 40px;
+  }
+  header .navbar__desktop__menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  header .navbar__desktop__menu ul li a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 35px;
+  }
+  header .navbar__desktop__menu ul li a span {
+    font-weight: bold;
+  }
+  header .navbar__desktop__menu ul li .active {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 35px;
+  }
+}/*# sourceMappingURL=header.css.map */

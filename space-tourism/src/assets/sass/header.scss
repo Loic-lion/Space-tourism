@@ -1,0 +1,127 @@
+@import "_reset.scss";
+@import "_variables-&-mixin.scss";
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  @include responsive-desktop {
+    margin-bottom: 76px;
+  }
+  .logo {
+    height: 40px;
+    margin: 24px 0px 0px 24px;
+    @include responsive-desktop {
+      height: 48px;
+      margin: 64px 0px 0px 55px;
+    }
+  }
+
+  .menu__burger {
+    height: 21px;
+    width: 24px;
+    margin: 33px 24px 0px 0px;
+    @include responsive-desktop {
+      display: none;
+    }
+  }
+  .navbar {
+    &__mobile {
+      z-index: 2;
+      position: absolute;
+      top: 0px;
+      right: -300px;
+      height: 100vh;
+      width: 254px;
+      backdrop-filter: blur(40px);
+      background-color: #ffffff 4%;
+      display: none;
+
+      &.open {
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__close {
+        height: 19px;
+        width: 19px;
+        align-self: flex-end;
+        margin: 34px 26px 65px 0px;
+      }
+      ul {
+        li {
+          margin: 0px 0px 32px 32px;
+          a {
+            letter-spacing: 2.7px;
+            text-decoration: none;
+            color: white;
+            font-family: $font2;
+            font-size: 16px;
+            span {
+              font-weight: 800;
+            }
+          }
+        }
+      }
+    }
+    &__desktop {
+      position: relative;
+      display: none;
+      @include responsive-desktop {
+        display: block;
+      }
+      hr {
+        position: absolute;
+        width: 473px;
+        top: 82px;
+        right: 800px;
+        z-index: 2;
+      }
+
+      &__menu {
+        display: none;
+        z-index: 1;
+        @include responsive-desktop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 830px;
+          height: 96px;
+          background-color: rgba(255, 255, 255, 0.04);
+          backdrop-filter: blur(40px);
+          margin-top: 40px;
+
+          ul {
+            display: flex;
+            li {
+              margin-right: 40px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                font-family: $font2;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                &:hover {
+                  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+                  padding-bottom: 35px;
+                }
+                span {
+                  font-weight: bold;
+                }
+              }
+              .active {
+                border-bottom: 3px solid rgb(255, 255, 255);
+                padding-bottom: 35px;
+              }
+            }
+          }
+        }
+        @include responsive-tablet {
+        }
+      }
+    }
+  }
+}

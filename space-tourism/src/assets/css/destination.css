@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+.cont {
+  animation: fade-in 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .cont {
+    width: 1110px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.cont__destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .cont__destination {
+    align-items: start;
+  }
+}
+.cont__destination h5 {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .cont__destination h5 {
+    margin: 0px 0px 97px 0px;
+    font-size: 28px;
+    letter-spacing: 5px;
+    text-align: start;
+  }
+}
+.cont__destination h5 span {
+  color: rgba(255, 255, 255, 0.247);
+}
+.cont__destination__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont__destination__navigation img {
+  height: 170px;
+  width: 170px;
+  margin-bottom: 26px;
+}
+@media screen and (min-width: 1440px) {
+  .cont__destination__navigation img {
+    height: 445px;
+    width: 445px;
+    margin-left: 64px;
+  }
+}
+.cont__destination__navigation__bar ul {
+  display: flex;
+  margin: 64px 0px 20px 0px;
+  justify-content: center;
+}
+@media screen and (min-width: 1440px) {
+  .cont__destination__navigation__bar ul {
+    margin-bottom: 52px;
+    justify-content: start;
+  }
+}
+.cont__destination__navigation__bar ul li {
+  margin-right: 27px;
+}
+.cont__destination__navigation__bar ul li:last-child {
+  margin-right: 0px;
+}
+.cont__destination__navigation__bar ul li a {
+  text-decoration: none;
+  color: rgb(208, 214, 249);
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.cont__destination__navigation__bar ul li a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 12px;
+}
+.cont__info__planet {
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .cont__info__planet {
+    text-align: left;
+    width: 390px;
+  }
+}
+.cont__info__planet h3 {
+  font-family: "Bellefair", serif;
+  font-size: 56px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .cont__info__planet h3 {
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+}
+.cont__info__planet__description {
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  margin-bottom: 32px;
+  width: 327px;
+  color: rgb(208, 214, 249);
+}
+@media screen and (min-width: 1440px) {
+  .cont__info__planet__description {
+    width: 370px;
+    text-align: justify;
+    margin-bottom: 54px;
+  }
+}
+.cont__info__planet hr {
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1440px) {
+  .cont__info__planet hr {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cont__info__planet__stat {
+    display: flex;
+    -moz-column-gap: 79px;
+         column-gap: 79px;
+  }
+}
+.cont__info__planet__stat__box__title {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  color: rgb(208, 214, 249);
+}
+.cont__info__planet__stat__box__km {
+  margin-bottom: 32px;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.cont__info__planet__stat__box__day {
+  margin-bottom: 58px;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}/*# sourceMappingURL=destination.css.map */

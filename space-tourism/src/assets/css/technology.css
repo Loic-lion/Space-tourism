@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+.container__technology {
+  animation: fade-in 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology {
+    align-items: start;
+  }
+}
+.container__technology h5 {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+.container__technology h5 span {
+  color: rgba(255, 255, 255, 0.247);
+}
+@media screen and (min-width: 1440px) {
+  .container__technology h5 {
+    font-size: 28px;
+    letter-spacing: 5px;
+    margin-bottom: 26px;
+    width: 1110px;
+    align-self: center;
+  }
+}
+.container__technology__info {
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+    -moz-column-gap: 130px;
+         column-gap: 130px;
+  }
+}
+.container__technology__info__mobile {
+  width: 100%;
+  margin-bottom: 34px;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__mobile {
+    display: none;
+  }
+}
+.container__technology__info__desktop {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__desktop {
+    display: block;
+  }
+}
+.container__technology__info__navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation {
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 111px;
+    width: 632px;
+  }
+}
+.container__technology__info__navigation__navbar {
+  margin-bottom: 26px;
+}
+.container__technology__info__navigation__navbar ul {
+  display: flex;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation__navbar ul {
+    flex-direction: column;
+    margin-right: 80px;
+  }
+}
+.container__technology__info__navigation__navbar ul li {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation__navbar ul li {
+    margin: 0px 0px 32px 0px;
+    height: 80px;
+    width: 80px;
+    font-size: 32px;
+  }
+}
+.container__technology__info__navigation__navbar ul li:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+.container__technology__info__navigation__navbar ul li:last-child {
+  margin-right: 0px;
+}
+.container__technology__info__navigation__navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container__technology__info__navigation__data {
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation__data {
+    text-align: left;
+  }
+}
+.container__technology__info__navigation__data__subtitle {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 9px;
+  color: rgb(208, 214, 249);
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation__data__subtitle {
+    margin-bottom: 11px;
+  }
+}
+.container__technology__info__navigation__data h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation__data h3 {
+    margin-bottom: 17px;
+    font-size: 56px;
+  }
+}
+.container__technology__info__navigation__data__description {
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  line-height: 25px;
+  width: 327px;
+  margin-bottom: 104px;
+  color: rgb(208, 214, 249);
+}
+@media screen and (min-width: 1440px) {
+  .container__technology__info__navigation__data__description {
+    font-size: 18px;
+    line-height: 32px;
+    width: 444px;
+  }
+}/*# sourceMappingURL=technology.css.map */

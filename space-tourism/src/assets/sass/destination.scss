@@ -1,0 +1,155 @@
+@import "_variables-&-mixin.scss";
+.cont {
+  animation: fade-in 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include responsive-desktop {
+    width: 1110px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include responsive-desktop {
+      align-items: start;
+    }
+    h5 {
+      margin-bottom: 32px;
+      font-size: 16px;
+      font-family: $font2;
+      letter-spacing: 2.7px;
+      text-transform: uppercase;
+      @include responsive-desktop {
+        margin: 0px 0px 97px 0px;
+        font-size: 28px;
+        letter-spacing: 5px;
+        text-align: start;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.247);
+      }
+    }
+    &__navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        height: 170px;
+        width: 170px;
+        margin-bottom: 26px;
+
+        @include responsive-desktop {
+          height: 445px;
+          width: 445px;
+          margin-left: 64px;
+        }
+      }
+
+      &__bar {
+        ul {
+          display: flex;
+          margin: 64px 0px 20px 0px;
+          justify-content: center;
+          @include responsive-desktop {
+            margin-bottom: 52px;
+            justify-content: start;
+          }
+          li {
+            margin-right: 27px;
+            &:last-child {
+              margin-right: 0px;
+            }
+            a {
+              text-decoration: none;
+              color: $colorFont;
+              font-family: $font2;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              &:hover {
+                border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+                padding-bottom: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__info__planet {
+    text-align: center;
+
+    @include responsive-desktop {
+      text-align: left;
+      width: 390px;
+    }
+    h3 {
+      font-family: $font1;
+      font-size: 56px;
+      text-transform: uppercase;
+      @include responsive-desktop {
+        font-size: 100px;
+        margin-bottom: 40px;
+      }
+    }
+    &__description {
+      font-size: 15px;
+      font-family: $font3;
+      line-height: 25px;
+      margin-bottom: 32px;
+      width: 327px;
+      color: $colorFont;
+      @include responsive-desktop {
+        width: 370px;
+        text-align: justify;
+        margin-bottom: 54px;
+      }
+    }
+    hr {
+      border: 1px solid rgba(255, 255, 255, 0.171);
+      margin-bottom: 32px;
+      @include responsive-desktop {
+        margin-bottom: 28px;
+      }
+    }
+    &__stat {
+      @include responsive-desktop {
+        display: flex;
+        column-gap: 79px;
+      }
+      &__box {
+        &__title {
+          font-size: 14px;
+          font-family: $font2;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 12px;
+          color: $colorFont;
+        }
+        &__km {
+          margin-bottom: 32px;
+          font-family: $font1;
+          font-size: 28px;
+          text-transform: uppercase;
+        }
+        &__day {
+          margin-bottom: 58px;
+          font-family: $font1;
+          font-size: 28px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
