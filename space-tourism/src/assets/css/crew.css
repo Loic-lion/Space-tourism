@@ -1,25 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
-h5 {
-  margin-bottom: 32px;
-  font-size: 16px;
-  font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-}
-h5 span {
-  color: rgba(255, 255, 255, 0.247);
-}
-
 .container__crew {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 }
+@media screen and (min-width: 1440px) {
+  .container__crew {
+    width: 1110px;
+    height: 700px;
+    flex-direction: row;
+    margin-top: -14px;
+    justify-content: space-between;
+  }
+}
+.container__crew__info {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info {
+    flex-direction: column-reverse;
+  }
+}
+.container__crew__info h5 {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info h5 {
+    margin: 14px 0px 154px 0px;
+    font-size: 28px;
+    letter-spacing: 5px;
+    order: 3;
+    text-align: start;
+  }
+}
+.container__crew__info h5 span {
+  color: rgba(255, 255, 255, 0.247);
+}
 .container__crew__info__navbar {
   display: flex;
   justify-content: center;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info__navbar {
+    justify-content: start;
+  }
 }
 .container__crew__info__navbar ul {
   display: flex;
@@ -27,6 +59,11 @@ h5 span {
 }
 .container__crew__info__navbar ul li {
   margin-right: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info__navbar ul li {
+    margin-right: 24px;
+  }
 }
 .container__crew__info__navbar ul li:last-child {
   margin-right: 0px;
@@ -37,8 +74,19 @@ h5 span {
   background-color: rgba(255, 255, 255, 0.171);
   border-radius: 50%;
 }
+@media screen and (min-width: 1440px) {
+  .container__crew__info__navbar ul li a div {
+    height: 15px;
+    width: 15px;
+  }
+}
 .container__crew__info__member {
   text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info__member {
+    text-align: start;
+  }
 }
 .container__crew__info__member__role {
   font-size: 16px;
@@ -47,23 +95,56 @@ h5 span {
   color: rgba(255, 255, 255, 0.493);
   margin-bottom: 8px;
 }
+@media screen and (min-width: 1440px) {
+  .container__crew__info__member__role {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+}
 .container__crew__info__member h3 {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info__member h3 {
+    font-size: 56px;
+    margin-bottom: 27px;
+  }
 }
 .container__crew__info__member__bio {
   font-size: 16px;
   font-family: "Barlow", sans-serif;
   line-height: 25px;
   width: 327px;
+  height: 158px;
   margin-bottom: 104px;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew__info__member__bio {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 90px;
+    width: 444px;
+  }
 }
 .container__crew hr {
   margin: 0px 0px 32px 0px;
   width: 90%;
   border: 1px solid rgba(255, 255, 255, 0.171);
 }
+@media screen and (min-width: 1440px) {
+  .container__crew hr {
+    display: none;
+  }
+}
 .container__crew img {
   height: 222px;
+}
+@media screen and (min-width: 1440px) {
+  .container__crew img {
+    height: auto;
+    max-width: 550px;
+    align-self: flex-end;
+  }
 }/*# sourceMappingURL=crew.css.map */

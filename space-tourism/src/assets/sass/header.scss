@@ -6,6 +6,9 @@ header {
   position: relative;
   justify-content: space-between;
   margin-bottom: 24px;
+  @include responsive-desktop {
+    margin-bottom: 76px;
+  }
   .logo {
     height: 40px;
     margin: 24px 0px 0px 24px;

@@ -138,6 +138,11 @@ header {
   justify-content: space-between;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 1440px) {
+  header {
+    margin-bottom: 76px;
+  }
+}
 header .logo {
   height: 40px;
   margin: 24px 0px 0px 24px;

@@ -10,17 +10,15 @@ export default function Crew({ crew }) {
     document.body.classList.remove("technology");
     document.body.classList.remove("home");
     document.body.classList.remove("destination");
-
-
   }
   addBodyClass();
   return (
     <>
-      <h5>
-        <span>02</span> Meet your crew
-      </h5>
       <section className="container__crew">
         <section className="container__crew__info">
+          <h5>
+            <span>02</span> Meet your crew
+          </h5>
           <NavBarCrew crew={crew} />
           <Routes>
             <Route path="/*" element={<Navigate to="Douglas Hurley" />} />

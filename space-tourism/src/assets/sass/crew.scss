@@ -1,30 +1,56 @@
 @import "_variables-&-mixin.scss";
 
-h5 {
-  margin-bottom: 32px;
-  font-size: 16px;
-  font-family: $font2;
-  letter-spacing: 2.7px;
-  text-transform: uppercase;
-  span {
-    color: rgba(255, 255, 255, 0.247);
-  }
-}
-
 .container__crew {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  @include responsive-desktop {
+    width: 1110px;
+    height: 700px;
+    flex-direction: row;
+    margin-top: -14px;
+    justify-content: space-between;
+  }
+
   &__info {
+    display: flex;
+    flex-direction: column;
+    @include responsive-desktop {
+      flex-direction: column-reverse;
+    }
+    h5 {
+      margin-bottom: 32px;
+      font-size: 16px;
+      font-family: $font2;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-align: center;
+      @include responsive-desktop {
+        margin: 14px 0px 154px 0px;
+        font-size: 28px;
+        letter-spacing: 5px;
+        order: 3;
+        text-align: start;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.247);
+      }
+    }
     &__navbar {
       display: flex;
       justify-content: center;
+      @include responsive-desktop {
+        justify-content: start;
+      }
       ul {
         display: flex;
         margin-bottom: 32px;
 
         li {
           margin-right: 16px;
+          @include responsive-desktop {
+            margin-right: 24px;
+          }
           &:last-child {
             margin-right: 0px;
           }
@@ -34,6 +60,10 @@ h5 {
               width: 10px;
               background-color: rgba(255, 255, 255, 0.171);
               border-radius: 50%;
+              @include responsive-desktop {
+                height: 15px;
+                width: 15px;
+              }
             }
           }
         }
@@ -41,24 +71,42 @@ h5 {
     }
     &__member {
       text-align: center;
+      @include responsive-desktop {
+        text-align: start;
+      }
       &__role {
         font-size: 16px;
         font-family: $font1;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.493);
         margin-bottom: 8px;
+        @include responsive-desktop {
+          font-size: 32px;
+          margin-bottom: 15px;
+        }
       }
       h3 {
         font-size: 24px;
         text-transform: uppercase;
         margin-bottom: 16px;
+        @include responsive-desktop {
+          font-size: 56px;
+          margin-bottom: 27px;
+        }
       }
       &__bio {
         font-size: 16px;
         font-family: $font3;
         line-height: 25px;
         width: 327px;
+        height: 158px;
         margin-bottom: 104px;
+        @include responsive-desktop {
+          font-size: 18px;
+          line-height: 32px;
+          margin-bottom: 90px;
+          width: 444px;
+        }
       }
     }
   }
@@ -66,8 +114,16 @@ h5 {
     margin: 0px 0px 32px 0px;
     width: 90%;
     border: 1px solid rgba(255, 255, 255, 0.171);
+    @include responsive-desktop {
+      display: none;
+    }
   }
   img {
     height: 222px;
+    @include responsive-desktop {
+      height: auto;
+      max-width: 550px;
+      align-self: flex-end;
+    }
   }
 }

@@ -79,7 +79,7 @@ export default function Header() {
             </li>
             <li>
               <Link to="/technology/*">
-                <span>03</span>Technology
+                <span>03 </span>Technology
               </Link>
             </li>
           </ul>

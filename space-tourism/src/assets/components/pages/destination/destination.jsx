@@ -10,41 +10,43 @@ export default function Destination({ destinations }) {
     document.body.classList.remove("technology");
     document.body.classList.remove("crew");
     document.body.classList.remove("home");
-
-
   }
   addBodyClass();
 
   return (
     <>
-      <section className="container__destination">
-        <h5>
-          <span>01</span> Pick your destination
-        </h5>
-        <div className="container__destination__navigation">
+      <section className="container">
+        <section className="container__destination">
+          <h5>
+            <span>01</span> Pick your destination
+          </h5>
+          <div className="container__destination__navigation">
+            <Routes>
+              <Route path="/*" element={<Navigate to="moon" />} />
+              {destinations.map((destinationsImage, index) => (
+                <Route
+                  key={index}
+                  path={destinationsImage.name}
+                  element={<DestinationImg info={destinationsImage} />}
+                />
+              ))}
+            </Routes>
+          </div>
+        </section>
+        <article>
+          <NavBarDestination planet={destinations} />
           <Routes>
             <Route path="/*" element={<Navigate to="moon" />} />
-            {destinations.map((destinationsImage, index) => (
+            {destinations.map((destination, index) => (
               <Route
                 key={index}
-                path={destinationsImage.name}
-                element={<DestinationImg info={destinationsImage} />}
+                path={destination.name}
+                element={<Planet info={destination} />}
               />
             ))}
           </Routes>
-          <NavBarDestination planet={destinations} />
-        </div>
+        </article>
       </section>
-      <Routes>
-        <Route path="/*" element={<Navigate to="moon" />} />
-        {destinations.map((destination, index) => (
-          <Route
-            key={index}
-            path={destination.name}
-            element={<Planet info={destination} />}
-          />
-        ))}
-      </Routes>
     </>
   );
 }
