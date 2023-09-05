@@ -18,6 +18,7 @@
 .container__crew__info {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
 }
 @media screen and (min-width: 1440px) {
   .container__crew__info {
@@ -119,6 +120,7 @@
   width: 327px;
   height: 158px;
   margin-bottom: 104px;
+  color: rgb(208, 214, 249);
 }
 @media screen and (min-width: 1440px) {
   .container__crew__info__member__bio {

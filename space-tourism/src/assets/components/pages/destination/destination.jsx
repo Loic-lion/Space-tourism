@@ -15,12 +15,12 @@ export default function Destination({ destinations }) {
 
   return (
     <>
-      <section className="container">
-        <section className="container__destination">
+      <section className="cont">
+        <section className="cont__destination">
           <h5>
             <span>01</span> Pick your destination
           </h5>
-          <div className="container__destination__navigation">
+          <div className="cont__destination__navigation">
             <Routes>
               <Route path="/*" element={<Navigate to="moon" />} />
               {destinations.map((destinationsImage, index) => (

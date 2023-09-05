@@ -80,6 +80,7 @@
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 9px;
+  color: rgb(208, 214, 249);
 }
 .container__technology__info__navigation__data h3 {
   font-size: 24px;
@@ -92,4 +93,5 @@
   line-height: 25px;
   width: 327px;
   margin-bottom: 104px;
+  color: rgb(208, 214, 249);
 }/*# sourceMappingURL=technology.css.map */

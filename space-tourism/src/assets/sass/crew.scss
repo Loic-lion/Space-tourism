@@ -15,6 +15,7 @@
   &__info {
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     @include responsive-desktop {
       flex-direction: column-reverse;
     }
@@ -101,6 +102,7 @@
         width: 327px;
         height: 158px;
         margin-bottom: 104px;
+        color: $colorFont;
         @include responsive-desktop {
           font-size: 18px;
           line-height: 32px;

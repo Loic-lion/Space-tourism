@@ -6,6 +6,8 @@ $font1: "Bellefair", serif;
 $font2: "Barlow Condensed", sans-serif;
 $font3: "Barlow", sans-serif;
 
+$colorFont: rgba(208, 214, 249, 1);
+
 @mixin responsive-desktop {
   @media screen and (min-width: 1440px) {
     @content;

@@ -24,14 +24,15 @@
   }
 }
 .container__home h5 {
-  margin-top: 144px;
   font-size: 16px;
   margin-bottom: 16px;
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 3px;
+  color: rgb(208, 214, 249);
 }
 @media screen and (min-width: 1440px) {
   .container__home h5 {
+    margin-top: 144px;
     font-size: 28px;
     margin-bottom: 55px;
     letter-spacing: 5px;
@@ -56,6 +57,7 @@
   margin-bottom: 81px;
   line-height: 25px;
   font-family: "Barlow", sans-serif;
+  color: rgb(208, 214, 249);
 }
 @media screen and (min-width: 1440px) {
   .container__home p {
@@ -66,7 +68,6 @@
   }
 }
 .container__explore__circle {
-  margin-top: 144px;
   position: relative;
   background-color: white;
   height: 150px;

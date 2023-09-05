@@ -16,12 +16,13 @@
       margin-top: 0px;
     }
     h5 {
-      margin-top: 144px;
       font-size: 16px;
       margin-bottom: 16px;
       font-family: $font2;
       letter-spacing: 3px;
+      color: $colorFont;
       @include responsive-desktop {
+        margin-top: 144px;
         font-size: 28px;
         margin-bottom: 55px;
         letter-spacing: 5px;
@@ -44,6 +45,7 @@
       margin-bottom: 81px;
       line-height: 25px;
       font-family: $font3;
+      color: $colorFont;
       @include responsive-desktop {
         font-size: 18px;
         text-align: left;
@@ -54,7 +56,6 @@
   }
   &__explore {
     &__circle {
-      margin-top: 144px;
       position: relative;
       background-color: white;
       height: 150px;
