@@ -30,7 +30,7 @@
     @include responsive-desktop {
       display: flex;
       flex-direction: row-reverse;
-      // justify-content: space-between;
+      margin-bottom: 60px;
       column-gap: 130px;
     }
     &__mobile {
