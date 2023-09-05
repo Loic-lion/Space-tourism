@@ -138,6 +138,11 @@ header {
   justify-content: space-between;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  header {
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 1440px) {
   header {
     margin-bottom: 76px;
@@ -146,6 +151,12 @@ header {
 header .logo {
   height: 40px;
   margin: 24px 0px 0px 24px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  header .logo {
+    height: 48px;
+    margin: 24px 0px 0px 39px;
+  }
 }
 @media screen and (min-width: 1440px) {
   header .logo {
@@ -157,6 +168,11 @@ header .menu__burger {
   height: 21px;
   width: 24px;
   margin: 33px 24px 0px 0px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  header .menu__burger {
+    display: none;
+  }
 }
 @media screen and (min-width: 1440px) {
   header .menu__burger {
@@ -203,6 +219,11 @@ header .navbar__desktop {
   position: relative;
   display: none;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  header .navbar__desktop {
+    display: block;
+  }
+}
 @media screen and (min-width: 1440px) {
   header .navbar__desktop {
     display: block;
@@ -215,9 +236,54 @@ header .navbar__desktop hr {
   right: 800px;
   z-index: 2;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  header .navbar__desktop hr {
+    display: none;
+  }
+}
 header .navbar__desktop__menu {
   display: none;
   z-index: 1;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  header .navbar__desktop__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    width: 450px;
+    height: 96px;
+  }
+  header .navbar__desktop__menu ul {
+    display: flex;
+  }
+  header .navbar__desktop__menu ul li {
+    margin-right: 40px;
+  }
+  header .navbar__desktop__menu ul li:last-child {
+    margin-right: 0px;
+  }
+  header .navbar__desktop__menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  header .navbar__desktop__menu ul li a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 35px;
+  }
+  header .navbar__desktop__menu ul li a span {
+    display: none;
+  }
+  header .navbar__desktop__menu ul li .active {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 35px;
+  }
 }
 @media screen and (min-width: 1440px) {
   header .navbar__desktop__menu {

@@ -20,6 +20,14 @@
   letter-spacing: 2.7px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology h5 {
+    align-self: start;
+    margin-left: 39px;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+}
 .container__technology h5 span {
   color: rgba(255, 255, 255, 0.247);
 }
@@ -47,6 +55,11 @@
 .container__technology__info__mobile {
   width: 100%;
   margin-bottom: 34px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology__info__mobile {
+    margin-bottom: 56px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container__technology__info__mobile {
@@ -78,6 +91,11 @@
 .container__technology__info__navigation__navbar {
   margin-bottom: 26px;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology__info__navigation__navbar {
+    margin-bottom: 0px;
+  }
+}
 .container__technology__info__navigation__navbar ul {
   display: flex;
 }
@@ -96,6 +114,13 @@
   justify-content: center;
   align-items: center;
   margin-right: 16px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology__info__navigation__navbar ul li {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 44px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container__technology__info__navigation__navbar ul li {
@@ -131,6 +156,12 @@
   margin-bottom: 9px;
   color: rgb(208, 214, 249);
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology__info__navigation__data__subtitle {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__technology__info__navigation__data__subtitle {
     margin-bottom: 11px;
@@ -140,6 +171,12 @@
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology__info__navigation__data h3 {
+    margin-bottom: 16px;
+    font-size: 40px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container__technology__info__navigation__data h3 {
@@ -154,6 +191,13 @@
   width: 327px;
   margin-bottom: 104px;
   color: rgb(208, 214, 249);
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__technology__info__navigation__data__description {
+    font-size: 16px;
+    line-height: 28px;
+    width: 444px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container__technology__info__navigation__data__description {

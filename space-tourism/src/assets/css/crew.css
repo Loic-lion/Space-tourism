@@ -7,6 +7,15 @@
   flex-direction: column-reverse;
   align-items: center;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew {
     width: 1110px;
@@ -21,6 +30,12 @@
   flex-direction: column;
   align-self: flex-start;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew__info {
     flex-direction: column-reverse;
@@ -33,6 +48,14 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info h5 {
+    align-self: start;
+    margin-left: 39px;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container__crew__info h5 {
@@ -50,6 +73,11 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info__navbar {
+    order: 3;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew__info__navbar {
     justify-content: start;
@@ -58,6 +86,11 @@
 .container__crew__info__navbar ul {
   display: flex;
   margin-bottom: 32px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info__navbar ul {
+    margin-bottom: 40px;
+  }
 }
 .container__crew__info__navbar ul li {
   margin-right: 16px;
@@ -85,6 +118,13 @@
 .container__crew__info__member {
   text-align: center;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew__info__member {
     text-align: start;
@@ -97,6 +137,11 @@
   color: rgba(255, 255, 255, 0.493);
   margin-bottom: 8px;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info__member__role {
+    font-size: 24px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew__info__member__role {
     font-size: 32px;
@@ -107,6 +152,11 @@
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info__member h3 {
+    font-size: 40px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .container__crew__info__member h3 {
@@ -123,6 +173,14 @@
   margin-bottom: 104px;
   color: rgb(208, 214, 249);
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew__info__member__bio {
+    width: 458px;
+    height: 0px;
+    min-height: 80px;
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew__info__member__bio {
     font-size: 18px;
@@ -136,6 +194,11 @@
   width: 90%;
   border: 1px solid rgba(255, 255, 255, 0.171);
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew hr {
+    display: none;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew hr {
     display: none;
@@ -144,10 +207,17 @@
 .container__crew img {
   height: 222px;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .container__crew img {
+    height: 532px;
+    margin-top: 16px;
+    align-self: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   .container__crew img {
     height: auto;
-    max-width: 550px;
+    max-width: 456px;
     align-self: flex-end;
   }
 }/*# sourceMappingURL=crew.css.map */

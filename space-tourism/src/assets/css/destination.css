@@ -7,6 +7,11 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .cont {
     width: 1110px;
@@ -20,6 +25,11 @@
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__destination {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1440px) {
   .cont__destination {
     align-items: start;
@@ -31,6 +41,14 @@
   font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.7px;
   text-transform: uppercase;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__destination h5 {
+    align-self: start;
+    margin-left: 39px;
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .cont__destination h5 {
@@ -53,6 +71,13 @@
   width: 170px;
   margin-bottom: 26px;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__destination__navigation img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 53px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .cont__destination__navigation img {
     height: 445px;
@@ -64,6 +89,11 @@
   display: flex;
   margin: 64px 0px 20px 0px;
   justify-content: center;
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__destination__navigation__bar ul {
+    margin: 0px 0px 32px 0px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .cont__destination__navigation__bar ul {
@@ -102,6 +132,12 @@
   font-size: 56px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__info__planet h3 {
+    font-size: 80px;
+    margin-bottom: 8px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .cont__info__planet h3 {
     font-size: 100px;
@@ -116,6 +152,12 @@
   width: 327px;
   color: rgb(208, 214, 249);
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__info__planet__description {
+    width: 550px;
+    margin-bottom: 49px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .cont__info__planet__description {
     width: 370px;
@@ -127,9 +169,20 @@
   border: 1px solid rgba(255, 255, 255, 0.171);
   margin-bottom: 32px;
 }
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__info__planet hr {
+    margin-bottom: 28px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .cont__info__planet hr {
     margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 1439px) {
+  .cont__info__planet__stat {
+    display: flex;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1440px) {
