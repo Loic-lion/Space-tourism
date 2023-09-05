@@ -6,12 +6,19 @@ header {
   position: relative;
   justify-content: space-between;
   margin-bottom: 24px;
+  @include responsive-tablet {
+    margin-bottom: 40px;
+  }
   @include responsive-desktop {
     margin-bottom: 76px;
   }
   .logo {
     height: 40px;
     margin: 24px 0px 0px 24px;
+    @include responsive-tablet {
+      height: 48px;
+      margin: 24px 0px 0px 39px;
+    }
     @include responsive-desktop {
       height: 48px;
       margin: 64px 0px 0px 55px;
@@ -22,6 +29,9 @@ header {
     height: 21px;
     width: 24px;
     margin: 33px 24px 0px 0px;
+    @include responsive-tablet {
+      display: none;
+    }
     @include responsive-desktop {
       display: none;
     }
@@ -69,6 +79,9 @@ header {
     &__desktop {
       position: relative;
       display: none;
+      @include responsive-tablet {
+        display: block;
+      }
       @include responsive-desktop {
         display: block;
       }
@@ -78,11 +91,51 @@ header {
         top: 82px;
         right: 800px;
         z-index: 2;
+        @include responsive-tablet {
+          display: none;
+        }
       }
 
       &__menu {
         display: none;
         z-index: 1;
+        @include responsive-tablet {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(255, 255, 255, 0.04);
+          backdrop-filter: blur(40px);
+          width: 450px;
+          height: 96px;
+          ul {
+            display: flex;
+            li {
+              margin-right: 40px;
+              &:last-child{
+                margin-right: 0px;
+              }
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-family: $font2;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                &:hover {
+                  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+                  padding-bottom: 35px;
+                }
+                span {
+                  display: none;
+                }
+              }
+              .active {
+                border-bottom: 3px solid rgb(255, 255, 255);
+                padding-bottom: 35px;
+              }
+            }
+          }
+        }
         @include responsive-desktop {
           display: flex;
           align-items: center;
@@ -119,8 +172,7 @@ header {
             }
           }
         }
-        @include responsive-tablet {
-        }
+
       }
     }
   }
