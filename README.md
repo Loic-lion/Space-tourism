@@ -1,8 +1,8 @@
 # Space-tourism (work in progress)
 ## Projet solo
 __Création d'un site web responsive et dynamique en single page.__
-* 5 jours de travail (28/08/23 au ?)
-* Utilisation de React
+* 5 jours de travail (28/08/23 au 05/09/23)
+* Utilisation de React & React Router
 * Réalisé au cours de la formation BeCode
 ## Requis
 Node.js + npm install
