@@ -31,7 +31,7 @@
   letter-spacing: 3px;
   color: rgb(208, 214, 249);
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__home h5 {
     margin-top: 66px;
     font-size: 20px;
@@ -52,7 +52,7 @@
   margin-bottom: 16px;
   line-height: 100px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__home h1 {
     font-size: 150px;
     margin-bottom: 24px;
@@ -73,7 +73,7 @@
   font-family: "Barlow", sans-serif;
   color: rgb(208, 214, 249);
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__home p {
     width: 400px;
     margin-bottom: 156px;
@@ -100,7 +100,7 @@
   font-size: 20px;
   cursor: pointer;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__explore__circle {
     height: 242px;
     width: 242px;
@@ -123,7 +123,7 @@
   transition: transform 0.3s ease;
   z-index: 1;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__explore__circle__button {
     height: 242px;
     width: 242px;
