@@ -7,7 +7,7 @@
   flex-direction: column-reverse;
   align-items: center;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew {
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +30,7 @@
   flex-direction: column;
   align-self: flex-start;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info {
     flex-direction: column;
     width: 100%;
@@ -49,7 +49,7 @@
   text-transform: uppercase;
   text-align: center;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info h5 {
     align-self: start;
     margin-left: 39px;
@@ -73,7 +73,7 @@
   display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info__navbar {
     order: 3;
   }
@@ -87,7 +87,7 @@
   display: flex;
   margin-bottom: 32px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info__navbar ul {
     margin-bottom: 40px;
   }
@@ -118,7 +118,7 @@
 .container__crew__info__member {
   text-align: center;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info__member {
     display: flex;
     flex-direction: column;
@@ -137,7 +137,7 @@
   color: rgba(255, 255, 255, 0.493);
   margin-bottom: 8px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info__member__role {
     font-size: 24px;
   }
@@ -153,7 +153,7 @@
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info__member h3 {
     font-size: 40px;
   }
@@ -173,7 +173,7 @@
   margin-bottom: 104px;
   color: rgb(208, 214, 249);
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew__info__member__bio {
     width: 458px;
     height: 0px;
@@ -194,7 +194,7 @@
   width: 90%;
   border: 1px solid rgba(255, 255, 255, 0.171);
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew hr {
     display: none;
   }
@@ -207,7 +207,7 @@
 .container__crew img {
   height: 222px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__crew img {
     height: 532px;
     margin-top: 16px;

@@ -138,7 +138,7 @@ header {
   justify-content: space-between;
   margin-bottom: 24px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   header {
     margin-bottom: 40px;
   }
@@ -152,7 +152,7 @@ header .logo {
   height: 40px;
   margin: 24px 0px 0px 24px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   header .logo {
     height: 48px;
     margin: 24px 0px 0px 39px;
@@ -169,7 +169,7 @@ header .menu__burger {
   width: 24px;
   margin: 33px 24px 0px 0px;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   header .menu__burger {
     display: none;
   }
@@ -219,7 +219,7 @@ header .navbar__desktop {
   position: relative;
   display: none;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   header .navbar__desktop {
     display: block;
   }
@@ -236,7 +236,7 @@ header .navbar__desktop hr {
   right: 800px;
   z-index: 2;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   header .navbar__desktop hr {
     display: none;
   }
@@ -245,7 +245,7 @@ header .navbar__desktop__menu {
   display: none;
   z-index: 1;
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   header .navbar__desktop__menu {
     display: flex;
     align-items: center;

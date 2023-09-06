@@ -4,17 +4,11 @@
 body {
   font-family: "Bellefair", serif;
   color: white;
-  width: auto;
+  width: 100vw;
   height: 100vh;
-  background-size: auto 100%;
-  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #0B0D17;
-}
-@media screen and (min-width: 1440px) {
-  body {
-    background-size: 100% auto;
-  }
 }
 body.home {
   background-image: url("../img/home/background-home-mobile.jpg");
@@ -24,7 +18,7 @@ body.home {
     background-image: url("../img/home/background-home-desktop.jpg");
   }
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   body.home {
     background-image: url("../img/home/background-home-tablet.jpg");
   }
@@ -37,7 +31,7 @@ body.destination {
     background-image: url("../img/destination/background-destination-desktop.jpg");
   }
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   body.destination {
     background-image: url("../img/destination/background-destination-tablet.jpg");
   }
@@ -50,7 +44,7 @@ body.crew {
     background-image: url("../img/crew/background-crew-desktop.jpg");
   }
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   body.crew {
     background-image: url("../img/crew/background-crew-tablet.jpg");
   }
@@ -63,7 +57,7 @@ body.technology {
     background-image: url("../img/technology/background-technology-desktop.jpg");
   }
 }
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   body.technology {
     background-image: url("../img/technology/background-technology-tablet.jpg");
   }
@@ -72,9 +66,10 @@ body main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
-@media screen and (min-width: 376px) and (max-width: 1439px) {
+@media screen and (min-width: 575px) and (max-width: 1439px) {
   #root {
     max-height: 100vh;
   }

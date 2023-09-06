@@ -15,7 +15,7 @@ $colorFont: rgba(208, 214, 249, 1);
 }
 
 @mixin responsive-tablet {
-  @media screen and (min-width: 376px) and (max-width: 1439px) {
+  @media screen and (min-width: 575px) and (max-width: 1439px) {
     @content;
   }
 }
