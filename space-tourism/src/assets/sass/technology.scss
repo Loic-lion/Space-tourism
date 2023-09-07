@@ -81,6 +81,7 @@
           }
 
           li {
+            margin-right: 16px;
             a {
               text-decoration: none;
               color: white;
@@ -91,7 +92,7 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              margin-right: 16px;
+
               @include responsive-tablet {
                 height: 60px;
                 width: 60px;

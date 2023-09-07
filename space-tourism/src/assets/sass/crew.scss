@@ -85,12 +85,11 @@
               width: 10px;
               background-color: rgba(151, 151, 151, 0.17);
               border-radius: 50%;
-              
+
               @include responsive-desktop {
                 height: 15px;
                 width: 15px;
               }
-              
             }
           }
         }

@@ -105,6 +105,9 @@
     margin-right: 80px;
   }
 }
+.container__technology__info__navigation__navbar ul li {
+  margin-right: 16px;
+}
 .container__technology__info__navigation__navbar ul li a {
   text-decoration: none;
   color: white;
@@ -115,7 +118,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 16px;
 }
 @media screen and (min-width: 575px) and (max-width: 1439px) {
   .container__technology__info__navigation__navbar ul li a {
