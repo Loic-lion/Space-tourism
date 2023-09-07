@@ -7,4 +7,4 @@ __Création d'un site web responsive et dynamique en single page.__
 ## Requis
 Node.js + npm install
 ## Aperçu
-https://64f7aa774c94e105b8e0e5bd--genuine-boba-8a0535.netlify.app/
+https://genuine-boba-8a0535.netlify.app/
