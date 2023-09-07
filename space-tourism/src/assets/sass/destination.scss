@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   @include responsive-tablet {
-   width: 100%;
+    width: 100%;
   }
   @include responsive-desktop {
     width: 1110px;
@@ -19,7 +19,7 @@
     align-items: center;
     @include responsive-tablet {
       width: 100%;
-     }
+    }
     @include responsive-desktop {
       align-items: start;
     }
@@ -34,7 +34,7 @@
         margin-left: 39px;
         font-size: 20px;
         margin-bottom: 60px;
-       }
+      }
       @include responsive-desktop {
         margin: 0px 0px 97px 0px;
         font-size: 28px;
@@ -53,11 +53,12 @@
         height: 170px;
         width: 170px;
         margin-bottom: 26px;
+
         @include responsive-tablet {
-        height: 300px;
-        width: 300px;
-        margin-bottom: 53px;
-         }
+          height: 300px;
+          width: 300px;
+          margin-bottom: 53px;
+        }
         @include responsive-desktop {
           height: 445px;
           width: 445px;
@@ -72,7 +73,7 @@
           justify-content: center;
           @include responsive-tablet {
             margin: 0px 0px 32px 0px;
-           }
+          }
           @include responsive-desktop {
             margin-bottom: 52px;
             justify-content: start;
@@ -88,7 +89,7 @@
               font-family: $font2;
               text-transform: uppercase;
               letter-spacing: 3px;
-            
+
               &:hover {
                 border-bottom: 3px solid rgba(255, 255, 255, 0.5);
                 padding-bottom: 12px;
@@ -113,7 +114,7 @@
       @include responsive-tablet {
         font-size: 80px;
         margin-bottom: 8px;
-       }
+      }
       @include responsive-desktop {
         font-size: 100px;
         margin-bottom: 40px;
@@ -129,7 +130,7 @@
       @include responsive-tablet {
         width: 550px;
         margin-bottom: 49px;
-       }
+      }
       @include responsive-desktop {
         width: 370px;
         text-align: justify;
@@ -141,7 +142,7 @@
       margin-bottom: 32px;
       @include responsive-tablet {
         margin-bottom: 28px;
-       }
+      }
       @include responsive-desktop {
         margin-bottom: 28px;
       }
@@ -150,7 +151,7 @@
       @include responsive-tablet {
         display: flex;
         justify-content: space-around;
-       }
+      }
       @include responsive-desktop {
         display: flex;
         column-gap: 79px;

@@ -13,23 +13,19 @@ export default function NavBarTechnology({ technology }) {
       <nav className="container__technology__info__navigation__navbar">
         <ul>
           {technology.map((tech, index) => (
-            <li
-              key={index}
-              onClick={() => handleLinkClick(index)}
-              style={{
-                backgroundColor:
-                  activeLink === index
-                    ? "rgba(255, 255, 255)"
-                    : "rgba(255, 255, 255, 0.0)",
-              }}
-            >
+            <li key={index}>
               <Link
                 to={tech.name}
                 style={{
                   color: activeLink === index ? "black" : "rgba(255, 255, 255)",
+                  backgroundColor:
+                    activeLink === index
+                      ? "rgba(255, 255, 255)"
+                      : "rgba(255, 255, 255, 0.0)",
                 }}
+                onClick={() => handleLinkClick(index)}
               >
-                {index + 1}
+                <div>{index + 1}</div>
               </Link>
             </li>
           ))}

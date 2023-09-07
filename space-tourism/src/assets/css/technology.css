@@ -106,6 +106,11 @@
   }
 }
 .container__technology__info__navigation__navbar ul li {
+  margin-right: 16px;
+}
+.container__technology__info__navigation__navbar ul li a {
+  text-decoration: none;
+  color: white;
   height: 40px;
   width: 40px;
   border: 1px solid rgba(255, 255, 255, 0.253);
@@ -113,32 +118,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 16px;
 }
 @media screen and (min-width: 575px) and (max-width: 1439px) {
-  .container__technology__info__navigation__navbar ul li {
+  .container__technology__info__navigation__navbar ul li a {
     height: 60px;
     width: 60px;
     margin-bottom: 44px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .container__technology__info__navigation__navbar ul li {
+  .container__technology__info__navigation__navbar ul li a {
     margin: 0px 0px 32px 0px;
     height: 80px;
     width: 80px;
     font-size: 32px;
   }
 }
-.container__technology__info__navigation__navbar ul li:hover {
+.container__technology__info__navigation__navbar ul li a:hover {
   border: 1px solid rgb(255, 255, 255);
 }
-.container__technology__info__navigation__navbar ul li:last-child {
+.container__technology__info__navigation__navbar ul li a:last-child {
   margin-right: 0px;
-}
-.container__technology__info__navigation__navbar ul li a {
-  text-decoration: none;
-  color: white;
 }
 .container__technology__info__navigation__data {
   text-align: center;
