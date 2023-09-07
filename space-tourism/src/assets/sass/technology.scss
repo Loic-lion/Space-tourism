@@ -16,10 +16,10 @@
     letter-spacing: 2.7px;
     text-transform: uppercase;
     @include responsive-tablet {
-     align-self: start;
-     margin-left: 39px;
-     font-size: 20px;
-     margin-bottom: 60px;
+      align-self: start;
+      margin-left: 39px;
+      font-size: 20px;
+      margin-bottom: 60px;
     }
     span {
       color: rgba(255, 255, 255, 0.247);
@@ -45,7 +45,7 @@
       margin-bottom: 34px;
       @include responsive-tablet {
         margin-bottom: 56px;
-       }
+      }
       @include responsive-desktop {
         display: none;
       }
@@ -71,8 +71,8 @@
         margin-bottom: 26px;
         @include responsive-tablet {
           margin-bottom: 0px;
-         }
-        
+        }
+
         ul {
           display: flex;
           @include responsive-desktop {
@@ -81,34 +81,34 @@
           }
 
           li {
-            height: 40px;
-            width: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.253);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 16px;
-            @include responsive-tablet {
-              height: 60px;
-              width: 60px;
-              margin-bottom: 44px;
-             }
-            @include responsive-desktop {
-              margin: 0px 0px 32px 0px;
-              height: 80px;
-              width: 80px;
-              font-size: 32px;
-            }
-            &:hover {
-              border: 1px solid rgba(255, 255, 255, 1);
-            }
-            &:last-child {
-              margin-right: 0px;
-            }
             a {
               text-decoration: none;
               color: white;
+              height: 40px;
+              width: 40px;
+              border: 1px solid rgba(255, 255, 255, 0.253);
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 16px;
+              @include responsive-tablet {
+                height: 60px;
+                width: 60px;
+                margin-bottom: 44px;
+              }
+              @include responsive-desktop {
+                margin: 0px 0px 32px 0px;
+                height: 80px;
+                width: 80px;
+                font-size: 32px;
+              }
+              &:hover {
+                border: 1px solid rgba(255, 255, 255, 1);
+              }
+              &:last-child {
+                margin-right: 0px;
+              }
             }
           }
         }
@@ -128,7 +128,7 @@
           @include responsive-tablet {
             margin-bottom: 16px;
             font-size: 16px;
-           }
+          }
           @include responsive-desktop {
             margin-bottom: 11px;
           }
@@ -140,7 +140,7 @@
           @include responsive-tablet {
             margin-bottom: 16px;
             font-size: 40px;
-           }
+          }
           @include responsive-desktop {
             margin-bottom: 17px;
             font-size: 56px;
@@ -157,7 +157,7 @@
             font-size: 16px;
             line-height: 28px;
             width: 444px;
-           }
+          }
           @include responsive-desktop {
             font-size: 18px;
             line-height: 32px;

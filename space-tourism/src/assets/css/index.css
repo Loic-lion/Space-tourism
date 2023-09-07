@@ -4,11 +4,10 @@
 body {
   font-family: "Bellefair", serif;
   color: white;
-  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #0B0D17;
+  background-color: #0b0d17;
 }
 body.home {
   background-image: url("../img/home/background-home-mobile.jpg");
