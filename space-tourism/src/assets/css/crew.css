@@ -106,7 +106,7 @@
 .container__crew__info__navbar ul li a div {
   height: 10px;
   width: 10px;
-  background-color: rgba(255, 255, 255, 0.171);
+  background-color: rgba(151, 151, 151, 0.17);
   border-radius: 50%;
 }
 @media screen and (min-width: 1440px) {

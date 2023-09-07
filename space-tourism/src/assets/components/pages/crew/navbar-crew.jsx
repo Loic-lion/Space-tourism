@@ -20,7 +20,7 @@ export default function NavBarCrew({ crew }) {
                     backgroundColor:
                       activeLink === index
                         ? "rgba(255, 255, 255)"
-                        : "rgba(255, 255, 255, 0.5)",
+                        : "rgba(151, 151, 151, 0.17)",
                   }}
                 ></div>
               </Link>
